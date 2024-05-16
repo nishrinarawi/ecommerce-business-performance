@@ -13,6 +13,7 @@ An e-commerce platform has 8 data tables regarding sales. These 8 tables are ins
 <details>
   <summary> Click to see query </summary>
     <br>
+
 ```sql
 --==ORDER_ITEMS_DATASET==--
 
@@ -289,8 +290,4 @@ FROM 'D:\Study\Rakamin\Porto\Dataset\customers_dataset.csv'
 DELIMITER ','
 CSV HEADER;
 ```
-
-<br>
-</details>
-<br>
    
