@@ -292,15 +292,12 @@ CSV HEADER;
 ```
 <br>
 </details>
-<br>
-
 2. Set Primary Key and Foreign Key
 
 <details>
   <summary> Click to see query </summary>
     <br>
-
-
+	
 **Primary key**
 ```sql
 ALTER TABLE product_dataset ADD CONSTRAINT product_dataset_pkey PRIMARY KEY (product_id);
@@ -324,10 +321,8 @@ ALTER TABLE customer_dataset
     ADD CONSTRAINT zip_code_prefix FOREIGN KEY (customer_zip_code_prefix)
     REFERENCES geolocation (geolocation_zip_code_prefix);
 ```
-
 <br>
 </details>
-<br>
 
 3. Entity Relationship Diagram <br>
 ![erd](https://github.com/nishrinarawi/ecommerce-business-performance/blob/5a522a7d7769f29ed443142c8f8783e294684914/assets/ERD%20Ecommerce.png)
