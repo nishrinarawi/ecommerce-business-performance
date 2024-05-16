@@ -7,12 +7,11 @@ In a company, measuring business performance is crucial for tracking, monitoring
 ## Analysis  
 ### Data Preparation 
 An e-commerce platform has 8 data tables regarding sales. These 8 tables are inserted into a database named eCommerce, taking into account the data types of each column to maintain data integrity. Each column has a primary key used to identify each row of each table. The tables are also linked with foreign keys allowing seamless data integration and consistent updates. Here are the steps taken:  
-1. Create table and upload dataset  
+1. Create table and upload dataset
 <details>
   <summary> Click to see query </summary>
-    <br>
-
 **ORDER_ITEMS_DATASET**
+	
 ```sql
 --create table 
 CREATE TABLE order_items_dataset(
@@ -287,7 +286,7 @@ DELIMITER ','
 CSV HEADER;
 ```
 </details>
-2. Set Primary Key and Foreign Key  
+2. Set Primary key and Foreign key
 <details>
   <summary> Click to see query </summary>
 	
