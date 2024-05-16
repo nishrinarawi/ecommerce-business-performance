@@ -12,9 +12,8 @@ An e-commerce platform has 8 data tables regarding sales. These 8 tables are ins
   <summary> Click to see query </summary>
     <br>
 
+**ORDER_ITEMS_DATASET**
 ```sql
---==ORDER_ITEMS_DATASET==--
-
 --create table 
 CREATE TABLE order_items_dataset(
     order_id VARCHAR(50),
@@ -39,10 +38,9 @@ COPY order_items_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\order_items_dataset.csv'
 DELIMITER ','
 CSV HEADER;
-
-
---==PRODUCT_DATASET==--
-
+```
+**PRODUCT_DATASET**
+```sql
 ---create table
 CREATE TABLE product_dataset(
 	num INTEGER,
@@ -73,10 +71,10 @@ COPY product_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\product_dataset.csv'
 DELIMITER ','
 CSV HEADER;
+```
 
-
---==ORDERS_DATASET==--
-
+**ORDERS_DATASET**
+```sql
 --create table 
 CREATE TABLE orders_dataset(
     order_id VARCHAR(50),
@@ -103,10 +101,10 @@ COPY orders_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\orders_dataset.csv'
 DELIMITER ','
 CSV HEADER;
+```
 
-
---==REVIEWS_DATASET==--
-
+**REVIEWS_DATASET**
+```sql
 --create table
 CREATE TABLE reviews_dataset(
     review_id VARCHAR(50),
@@ -131,10 +129,10 @@ COPY reviews_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\order_reviews_dataset.csv'
 DELIMITER ','
 CSV HEADER;
+```
 
-
---==SELLERS_DATASET==--
-
+**SELLERS_DATASET**
+```sql
 --create table
 CREATE TABLE sellers_dataset(
     seller_id VARCHAR(50),
@@ -153,10 +151,10 @@ COPY sellers_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\sellers_dataset.csv'
 DELIMITER ','
 CSV HEADER;
+```
 
-
---==PAYMENT_DATASET==--
-
+**PAYMENT_DATASET**
+```sql
 --create table
 CREATE TABLE payments_dataset(
     order_id VARCHAR(50),
@@ -177,10 +175,10 @@ COPY payments_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\order_payments_dataset.csv'
 DELIMITER ','
 CSV HEADER;
+```
 
-
---==GEOLOCATION_DATASET==--
-
+**GEOLOCATION_DATASET**
+```sql
 ---create table
 CREATE TABLE geolocation_dataset(
     geolocation_zip_code_prefix VARCHAR(50),
@@ -263,10 +261,10 @@ FROM cust_cte
 UNION
 SELECT *
 FROM seller_cte;
+```
 
-
---==CUSTOMER_DATASET==--
-
+**CUSTOMER_DATASET**
+```sql
 --create table
 CREATE TABLE customer_dataset(
     customer_id VARCHAR(50),
@@ -292,7 +290,6 @@ CSV HEADER;
 2. Set Primary Key and Foreign Key  
 <details>
   <summary> Click to see query </summary>
-    <br>
 	
 **Primary key**
 ```sql
@@ -317,7 +314,6 @@ ALTER TABLE customer_dataset
     ADD CONSTRAINT zip_code_prefix FOREIGN KEY (customer_zip_code_prefix)
     REFERENCES geolocation (geolocation_zip_code_prefix);
 ```
-<br>
 </details>
 
 3. Entity Relationship Diagram <br>
