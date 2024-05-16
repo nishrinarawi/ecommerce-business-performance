@@ -9,7 +9,11 @@ In a company, measuring business performance is crucial for tracking, monitoring
 An e-commerce platform has 8 data tables regarding sales. These 8 tables are inserted into a database named eCommerce, taking into account the data types of each column to maintain data integrity. Each column has a primary key used to identify each row of each table. The tables are also linked with foreign keys allowing seamless data integration and consistent updates. Here are the steps taken:  
 1. Create table and upload dataset
 
-~~~sql
+
+<details>
+  <summary> Click to see query </summary>
+    <br>
+```sql
 --==ORDER_ITEMS_DATASET==--
 
 --create table 
@@ -284,5 +288,9 @@ COPY customer_dataset(
 FROM 'D:\Study\Rakamin\Porto\Dataset\customers_dataset.csv'
 DELIMITER ','
 CSV HEADER;
-~~~
+```
+
+<br>
+</details>
+<br>
    
