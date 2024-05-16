@@ -562,7 +562,8 @@ ORDER BY 5 DESC;
 ```
 
 </details>
-![payment](https://github.com/nishrinarawi/ecommerce-business-performance/blob/4f67d0d5a7d5246ddf16b8b0c316f6ba4ce596a6/assets/payment.png)
+
+![payment](https://github.com/nishrinarawi/ecommerce-business-performance/blob/4f67d0d5a7d5246ddf16b8b0c316f6ba4ce596a6/assets/payment.png) 
 
 ![payment_analysis](https://github.com/nishrinarawi/ecommerce-business-performance/blob/4f67d0d5a7d5246ddf16b8b0c316f6ba4ce596a6/assets/Annual%20Payment%20Type%20Usage%20Analysis.png) 
 
