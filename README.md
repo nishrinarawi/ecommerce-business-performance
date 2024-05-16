@@ -290,4 +290,37 @@ FROM 'D:\Study\Rakamin\Porto\Dataset\customers_dataset.csv'
 DELIMITER ','
 CSV HEADER;
 ```
+
+2. Set Primary Key and Foreign Key
+
+<details>
+  <summary> Click to see query </summary>
+    <br>
+
+
+**Primary key**
+```sql
+ALTER TABLE product_dataset ADD CONSTRAINT product_dataset_pkey PRIMARY KEY (product_id);
+ALTER TABLE orders_dataset ADD CONSTRAINT orders_dataset_pkey PRIMARY KEY (order_id);
+ALTER TABLE sellers_dataset ADD CONSTRAINT sellers_dataset_pkey PRIMARY KEY (seller_id);
+ALTER TABLE customer_dataset ADD CONSTRAINT customer_dataset_pkey PRIMARY KEY (customer_id);
+ALTER TABLE geolocation ADD CONSTRAINT geolocation_pkey PRIMARY KEY (geolocation_zip_code_prefix);
+```
+**Foreign Key**
+```sql
+ALTER TABLE order_items_dataset ADD FOREIGN KEY (product_id) REFERENCES product_dataset;
+ALTER TABLE order_items_dataset ADD FOREIGN KEY (seller_id) REFERENCES sellers_dataset;
+ALTER TABLE order_items_dataset ADD FOREIGN KEY (order_id) REFERENCES orders_dataset;
+ALTER TABLE payments_dataset ADD FOREIGN KEY (order_id) REFERENCES orders_dataset;
+ALTER TABLE reviews_dataset ADD FOREIGN KEY (order_id) REFERENCES orders_dataset;
+ALTER TABLE orders_dataset ADD FOREIGN KEY (customer_id) REFERENCES customer_dataset;
+ALTER TABLE sellers_dataset 
+	ADD CONSTRAINT zip_code_prefix FOREIGN KEY (seller_zip_code_prefix)
+	REFERENCES geolocation (geolocation_zip_code_prefix);
+ALTER TABLE customer_dataset
+    ADD CONSTRAINT zip_code_prefix FOREIGN KEY (customer_zip_code_prefix)
+    REFERENCES geolocation (geolocation_zip_code_prefix);
+```
+3. Entity Relationship Diagram <br>
+![erd](https://github.com/nishrinarawi/ecommerce-business-performance/blob/5a522a7d7769f29ed443142c8f8783e294684914/assets/ERD%20Ecommerce.png)
    
