@@ -428,4 +428,11 @@ GROUP BY 1,2,3,4,5;
 ```
 </details>
 
-   
+![annual_growth](https://github.com/nishrinarawi/ecommerce-business-performance/blob/4eb38f68e4c0f257fccf8b1047ec003a54c86dff/assets/Annual%20Customer%20Activity%20Growth%20Analysis.png)
+
+Based on the data analysis and visualization conducted, the following insights were revealed:
+- The total number of customers recorded is 96,096 customers.
+- The number of new customers has been continuously increasing from 2016 to 2018.
+- The monthly active users from 2016 to 2018 have also been consistently increasing.
+- Customers who make repeat purchases (placing orders > 1) per year have significantly increased from 2016 to 2017, while there was a slight decrease in 2018.
+- On average, customers only place an order once per year.
