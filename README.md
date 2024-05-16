@@ -317,4 +317,8 @@ ALTER TABLE customer_dataset
 
 3. Entity Relationship Diagram <br>
 ![erd](https://github.com/nishrinarawi/ecommerce-business-performance/blob/5a522a7d7769f29ed443142c8f8783e294684914/assets/ERD%20Ecommerce.png)
+
+### Annual Customer Activity Growth Analysis
+![image](https://github.com/nishrinarawi/ecommerce-business-performance/assets/73336577/32538f24-4fa7-4e0a-860e-3a13d48ccc95)
+
    
